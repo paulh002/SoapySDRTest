@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{4236ecb5-f521-4051-9e89-663602ea9227}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{90efcf8a-6bf2-42a4-9436-57809eedaf57}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{0931c328-c81d-4a4a-a437-5d11eb960a65}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{348582e1-f00f-4c6e-a3df-5ec93c2aa84e}</UniqueIdentifier>
+      <Extensions>vgdbsettings</Extensions>
+    </Filter>
+    <Filter Include="Header files\SoapySDR">
+      <UniqueIdentifier>{07e3a381-2809-4057-a9aa-fe01d0823e9d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SoapySDRTest.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="SdrDevice.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SoapySDRTest-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="SoapySDRTest-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SoapySDR\Config.h">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Config.hpp">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Constants.h">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\ConverterPrimitives.hpp">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\ConverterRegistry.hpp">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Converters.h">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Device.h">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Device.hpp">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Errors.h">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Errors.hpp">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Formats.h">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Formats.hpp">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Logger.h">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Logger.hpp">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Modules.h">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Modules.hpp">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Registry.hpp">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Time.h">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Time.hpp">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Types.h">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Types.hpp">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Version.h">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SoapySDR\Version.hpp">
+      <Filter>Header files\SoapySDR</Filter>
+    </ClInclude>
+    <ClInclude Include="SdrDevice.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

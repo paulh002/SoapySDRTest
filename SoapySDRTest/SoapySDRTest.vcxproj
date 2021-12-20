@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{59A796DA-E2FE-4779-9017-653AD693CF26}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <RemoteBuildHost>192.168.88.51</RemoteBuildHost>
+    <ToolchainID>com.sysprogs.toolchain.default-gcc</ToolchainID>
+    <ToolchainVersion />
+    <GNUToolchainPrefix />
+    <GNUCompilerType>GCC</GNUCompilerType>
+    <RemoteBuildTool>Ninja</RemoteBuildTool>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <RemoteBuildHost>192.168.88.51</RemoteBuildHost>
+    <ToolchainID>com.sysprogs.toolchain.default-gcc</ToolchainID>
+    <ToolchainVersion />
+    <GNUToolchainPrefix />
+    <GNUCompilerType>GCC</GNUCompilerType>
+    <RemoteBuildTool>Ninja</RemoteBuildTool>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LibrarySearchDirectories>;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>SoapySDR;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <LinkerScript />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="SdrDevice.cpp" />
+    <ClCompile Include="SoapySDRTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SoapySDRTest-Debug.vgdbsettings" />
+    <None Include="SoapySDRTest-Release.vgdbsettings" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SdrDevice.h" />
+    <ClInclude Include="SoapySDR\Config.h" />
+    <ClInclude Include="SoapySDR\Config.hpp" />
+    <ClInclude Include="SoapySDR\Constants.h" />
+    <ClInclude Include="SoapySDR\ConverterPrimitives.hpp" />
+    <ClInclude Include="SoapySDR\ConverterRegistry.hpp" />
+    <ClInclude Include="SoapySDR\Converters.h" />
+    <ClInclude Include="SoapySDR\Device.h" />
+    <ClInclude Include="SoapySDR\Device.hpp" />
+    <ClInclude Include="SoapySDR\Errors.h" />
+    <ClInclude Include="SoapySDR\Errors.hpp" />
+    <ClInclude Include="SoapySDR\Formats.h" />
+    <ClInclude Include="SoapySDR\Formats.hpp" />
+    <ClInclude Include="SoapySDR\Logger.h" />
+    <ClInclude Include="SoapySDR\Logger.hpp" />
+    <ClInclude Include="SoapySDR\Modules.h" />
+    <ClInclude Include="SoapySDR\Modules.hpp" />
+    <ClInclude Include="SoapySDR\Registry.hpp" />
+    <ClInclude Include="SoapySDR\Time.h" />
+    <ClInclude Include="SoapySDR\Time.hpp" />
+    <ClInclude Include="SoapySDR\Types.h" />
+    <ClInclude Include="SoapySDR\Types.hpp" />
+    <ClInclude Include="SoapySDR\Version.h" />
+    <ClInclude Include="SoapySDR\Version.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
